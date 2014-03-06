@@ -6,7 +6,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="STKFormViewController">
             <connections>
-                <outlet property="birthday" destination="rHu-UU-cej" id="djX-fX-SeB"/>
                 <outlet property="collectionView" destination="VNr-ol-NDR" id="EcJ-te-hBy"/>
                 <outlet property="dataSource" destination="SN5-qn-fdj" id="OmJ-W4-vy7"/>
                 <outlet property="email" destination="hNA-gA-UzT" id="k8M-Nc-8Ce"/>
@@ -67,17 +66,8 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Birthday" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rHu-UU-cej">
-                    <rect key="frame" x="20" y="270" width="728" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="KOa-e5-h12"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="VNr-ol-NDR">
-                    <rect key="frame" x="0.0" y="308" width="768" height="716"/>
+                    <rect key="frame" x="0.0" y="270" width="768" height="754"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="lh3-YN-vEH">
                         <size key="itemSize" width="150" height="150"/>
@@ -93,17 +83,14 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="rHu-UU-cej" firstAttribute="top" secondItem="gwJ-ld-GqX" secondAttribute="bottom" constant="8" id="2mO-Og-fgl"/>
                 <constraint firstItem="TwI-LH-Q4U" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="5Nd-od-G8G"/>
-                <constraint firstAttribute="trailing" secondItem="rHu-UU-cej" secondAttribute="trailing" constant="20" id="5xc-sz-PMb"/>
                 <constraint firstItem="VNr-ol-NDR" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="8ey-Dj-d1b"/>
-                <constraint firstItem="rHu-UU-cej" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="EHn-IX-qPK"/>
+                <constraint firstItem="VNr-ol-NDR" firstAttribute="top" secondItem="gwJ-ld-GqX" secondAttribute="bottom" constant="8" id="AFM-Ic-WGP"/>
                 <constraint firstItem="LXL-hj-Ua8" firstAttribute="top" secondItem="TwI-LH-Q4U" secondAttribute="bottom" constant="8" id="FNz-iX-oz3"/>
                 <constraint firstAttribute="trailing" secondItem="wLJ-q1-CuJ" secondAttribute="trailing" constant="20" id="FYx-z4-8a6"/>
                 <constraint firstItem="hNA-gA-UzT" firstAttribute="top" secondItem="LXL-hj-Ua8" secondAttribute="bottom" constant="8" id="Fsq-VT-bpl"/>
                 <constraint firstAttribute="trailing" secondItem="TwI-LH-Q4U" secondAttribute="trailing" constant="20" id="H2W-B1-7iq"/>
                 <constraint firstAttribute="trailing" secondItem="hNA-gA-UzT" secondAttribute="trailing" constant="20" id="KIL-6Z-d76"/>
-                <constraint firstItem="VNr-ol-NDR" firstAttribute="top" secondItem="rHu-UU-cej" secondAttribute="bottom" constant="8" id="LxS-eK-wfg"/>
                 <constraint firstItem="wLJ-q1-CuJ" firstAttribute="top" secondItem="hNA-gA-UzT" secondAttribute="bottom" constant="8" id="UHe-4Q-3EY"/>
                 <constraint firstItem="gwJ-ld-GqX" firstAttribute="top" secondItem="wLJ-q1-CuJ" secondAttribute="bottom" constant="8" id="WhN-cR-8eq"/>
                 <constraint firstAttribute="trailing" secondItem="LXL-hj-Ua8" secondAttribute="trailing" constant="20" id="XH1-16-dwb"/>
