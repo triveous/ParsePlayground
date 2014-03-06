@@ -46,8 +46,6 @@ public class LogInSignUpActivity extends BaseActivity {
         Intent intent = getIntent();
         this.logIn = intent.getBooleanExtra(Constants.kLogInKey, false);
 
-        Log.d("BOOM", "Yep" + intent.getBooleanExtra(Constants.kLogInKey, true));
-
         if (this.logIn) {
             this.emailField.setVisibility(View.GONE);
         }

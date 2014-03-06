@@ -1,5 +1,6 @@
 package com.skladek.activity;
 
+import com.parse.ParseObject;
 import com.skladek.Constants;
 import com.skladek.R;
 

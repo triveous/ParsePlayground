@@ -1,5 +1,6 @@
 package com.skladek;
 
+import com.parse.Parse;
 import com.skladek.dependencyinjection.modules.AndroidModule;
 
 import android.app.Application;
@@ -35,6 +36,9 @@ public class ParsePlaygroundApplication extends Application {
 
         // Setup DI
         mGraph = ObjectGraph.create(getModules().toArray());
+
+        // Initialize Parse
+        Parse.initialize(this, "YDpyIfE75kxnNUMmyTkZANz9ST8Sx6PFMBd8IbeX", "MzleRB2joEiuso29R0lqGtfevzashJRU1be6tzR4");
     }
 
     /**

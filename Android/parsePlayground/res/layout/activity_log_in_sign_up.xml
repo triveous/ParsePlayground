@@ -19,8 +19,13 @@
         android:id="@+id/emailField"
         android:hint="Email (Optional)"
         />
+    <Button style="@style/fields"
+        android:id="@+id/submitButton"
+        android:text="Submit"
+         />
 
     <Button style="@style/fields"
+        android:layout_marginTop="70dp"
         android:id="@+id/facebookButton"
         android:text="Facebook"
         />
