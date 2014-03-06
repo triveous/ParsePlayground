@@ -1,14 +1,58 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#000">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
+    <Button style="@style/button"
+        android:id="@+id/currentUserButton"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="Current User"
+        />
 
-</RelativeLayout>
+    <Button style="@style/button"
+        android:id="@+id/usernameLogInButton"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="Log In Via Username"
+        />
+
+    <Button style="@style/button"
+        android:id="@+id/facebookLogInButton"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="Sign Up/Log In Via Facebook"
+        />
+
+    <Button style="@style/button"
+        android:id="@+id/twitterLogInButton"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="Sign Up/Log In Via Twitter"
+        />
+
+    <Button style="@style/button"
+        android:id="@+id/signUpButton"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="Sign Up"
+        />
+
+    <Button style="@style/button"
+        android:id="@+id/allUsersButton"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="All Users"
+        />
+
+    <Button style="@style/button"
+        android:id="@+id/allPhotosButton"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="All Photos"
+        />
+
+</LinearLayout>
