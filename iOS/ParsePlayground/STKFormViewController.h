@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface STKFormViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface STKFormViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
 
 - (instancetype)initWithUser:(PFUser *)user;
 
