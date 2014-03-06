@@ -18,10 +18,8 @@
 		C52446F118C779D500962CB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52446D318C779D500962CB8 /* UIKit.framework */; };
 		C52446F918C779D500962CB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C52446F718C779D500962CB8 /* InfoPlist.strings */; };
 		C52446FB18C779D500962CB8 /* ParsePlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C52446FA18C779D500962CB8 /* ParsePlaygroundTests.m */; };
-		C549846118C780EF00149518 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C549846018C780EF00149518 /* Parse.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		C549846518C7813F00149518 /* STKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C549846318C7813F00149518 /* STKMainViewController.m */; };
 		C549846618C7813F00149518 /* STKMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C549846418C7813F00149518 /* STKMainViewController.xib */; };
-		C549846F18C784B200149518 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C549846E18C784B200149518 /* FacebookSDK.framework */; };
 		C549847218C784EB00149518 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C549847018C784EB00149518 /* Security.framework */; };
 		C549847318C784EB00149518 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C549847118C784EB00149518 /* SystemConfiguration.framework */; };
 		C549847518C7850300149518 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C549847418C7850300149518 /* CFNetwork.framework */; };
@@ -44,6 +42,8 @@
 		C54984A318C7D3EF00149518 /* STKAllPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54984A118C7D3EF00149518 /* STKAllPhotosViewController.m */; };
 		C54984A418C7D3EF00149518 /* STKAllPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C54984A218C7D3EF00149518 /* STKAllPhotosViewController.xib */; };
 		C54984A718C7D4AE00149518 /* STKPhotosDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C54984A618C7D4AE00149518 /* STKPhotosDataSource.m */; };
+		C56DD6B218C8E97300081CD5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56DD6B118C8E97300081CD5 /* Parse.framework */; };
+		C56DD6B418C8E97B00081CD5 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56DD6B318C8E97B00081CD5 /* FacebookSDK.framework */; };
 		D5EB9903709B4099B93267E8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DA302E233443C8AEECA0E9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -75,13 +75,11 @@
 		C52446F618C779D500962CB8 /* ParsePlaygroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParsePlaygroundTests-Info.plist"; sourceTree = "<group>"; };
 		C52446F818C779D500962CB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C52446FA18C779D500962CB8 /* ParsePlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParsePlaygroundTests.m; sourceTree = "<group>"; };
-		C549846018C780EF00149518 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		C549846218C7813F00149518 /* STKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKMainViewController.h; sourceTree = "<group>"; };
 		C549846318C7813F00149518 /* STKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKMainViewController.m; sourceTree = "<group>"; };
 		C549846418C7813F00149518 /* STKMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STKMainViewController.xib; sourceTree = "<group>"; };
 		C549846718C7828500149518 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		C549846A18C7830F00149518 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
-		C549846E18C784B200149518 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		C549847018C784EB00149518 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		C549847118C784EB00149518 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C549847418C7850300149518 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -112,6 +110,8 @@
 		C54984A518C7D4AE00149518 /* STKPhotosDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKPhotosDataSource.h; sourceTree = "<group>"; };
 		C54984A618C7D4AE00149518 /* STKPhotosDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKPhotosDataSource.m; sourceTree = "<group>"; };
 		C56DD6B018C8E5BC00081CD5 /* STKApiConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STKApiConstants.h; sourceTree = "<group>"; };
+		C56DD6B118C8E97300081CD5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		C56DD6B318C8E97B00081CD5 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,17 +123,17 @@
 				C549849318C7987F00149518 /* AudioToolbox.framework in Frameworks */,
 				C549847D18C7852F00149518 /* QuartzCore.framework in Frameworks */,
 				C549847B18C7852700149518 /* MobileCoreServices.framework in Frameworks */,
+				C56DD6B218C8E97300081CD5 /* Parse.framework in Frameworks */,
 				C549847918C7851B00149518 /* libz.1.1.3.dylib in Frameworks */,
 				C549847718C7850E00149518 /* CoreLocation.framework in Frameworks */,
 				C549847518C7850300149518 /* CFNetwork.framework in Frameworks */,
 				C549847218C784EB00149518 /* Security.framework in Frameworks */,
 				C549847318C784EB00149518 /* SystemConfiguration.framework in Frameworks */,
 				C52446D218C779D500962CB8 /* CoreGraphics.framework in Frameworks */,
+				C56DD6B418C8E97B00081CD5 /* FacebookSDK.framework in Frameworks */,
 				C52446D418C779D500962CB8 /* UIKit.framework in Frameworks */,
 				C52446D018C779D500962CB8 /* Foundation.framework in Frameworks */,
 				D5EB9903709B4099B93267E8 /* libPods.a in Frameworks */,
-				C549846118C780EF00149518 /* Parse.framework in Frameworks */,
-				C549846F18C784B200149518 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,8 +238,8 @@
 		C549845F18C780EF00149518 /* External */ = {
 			isa = PBXGroup;
 			children = (
-				C549846E18C784B200149518 /* FacebookSDK.framework */,
-				C549846018C780EF00149518 /* Parse.framework */,
+				C56DD6B318C8E97B00081CD5 /* FacebookSDK.framework */,
+				C56DD6B118C8E97300081CD5 /* Parse.framework */,
 			);
 			path = External;
 			sourceTree = "<group>";
@@ -554,6 +554,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/skladek/nrdDev/Parse/ParsePlayground/External,
+					/Users/skladek/nrdDev/Parse/iOS/ParsePlayground/External,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParsePlayground/ParsePlayground-Prefix.pch";
@@ -573,6 +574,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/skladek/nrdDev/Parse/ParsePlayground/External,
+					/Users/skladek/nrdDev/Parse/iOS/ParsePlayground/External,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParsePlayground/ParsePlayground-Prefix.pch";
