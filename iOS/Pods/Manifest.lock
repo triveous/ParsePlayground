@@ -1,0 +1,10 @@
+PODS:
+  - NRDCategories (1.4.0)
+
+DEPENDENCIES:
+  - NRDCategories (~> 1.3)
+
+SPEC CHECKSUMS:
+  NRDCategories: ff4968fedfb2eb5721800afe4119a3db8da335ff
+
+COCOAPODS: 0.29.0

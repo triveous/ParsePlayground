@@ -1,0 +1,5 @@
+platform :ios, '7.0'
+xcodeproj 'ParsePlayground.xcodeproj'
+inhibit_all_warnings!
+
+pod 'NRDCategories', '~> 1.3'

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="STKFormViewController">
+            <connections>
+                <outlet property="birthday" destination="rHu-UU-cej" id="djX-fX-SeB"/>
+                <outlet property="collectionView" destination="VNr-ol-NDR" id="EcJ-te-hBy"/>
+                <outlet property="dataSource" destination="SN5-qn-fdj" id="OmJ-W4-vy7"/>
+                <outlet property="email" destination="hNA-gA-UzT" id="k8M-Nc-8Ce"/>
+                <outlet property="firstName" destination="wLJ-q1-CuJ" id="Ksm-as-z5C"/>
+                <outlet property="lastName" destination="gwJ-ld-GqX" id="jbi-jl-rqi"/>
+                <outlet property="password" destination="LXL-hj-Ua8" id="YM6-7L-XrK"/>
+                <outlet property="username" destination="TwI-LH-Q4U" id="dwo-Xe-iHK"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TwI-LH-Q4U">
+                    <rect key="frame" x="20" y="80" width="728" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="q5v-Pr-c3G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LXL-hj-Ua8">
+                    <rect key="frame" x="20" y="118" width="728" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="frU-dO-hvt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hNA-gA-UzT">
+                    <rect key="frame" x="20" y="156" width="728" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Ecb-8K-uxy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wLJ-q1-CuJ">
+                    <rect key="frame" x="20" y="194" width="728" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="gDh-L1-Pj0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gwJ-ld-GqX">
+                    <rect key="frame" x="20" y="232" width="728" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="EZX-rf-WMu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Birthday" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rHu-UU-cej">
+                    <rect key="frame" x="20" y="270" width="728" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="KOa-e5-h12"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="VNr-ol-NDR">
+                    <rect key="frame" x="0.0" y="308" width="768" height="716"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="lh3-YN-vEH">
+                        <size key="itemSize" width="150" height="150"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="SN5-qn-fdj" id="y1k-U7-PHQ"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rHu-UU-cej" firstAttribute="top" secondItem="gwJ-ld-GqX" secondAttribute="bottom" constant="8" id="2mO-Og-fgl"/>
+                <constraint firstItem="TwI-LH-Q4U" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="5Nd-od-G8G"/>
+                <constraint firstAttribute="trailing" secondItem="rHu-UU-cej" secondAttribute="trailing" constant="20" id="5xc-sz-PMb"/>
+                <constraint firstItem="VNr-ol-NDR" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="8ey-Dj-d1b"/>
+                <constraint firstItem="rHu-UU-cej" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="EHn-IX-qPK"/>
+                <constraint firstItem="LXL-hj-Ua8" firstAttribute="top" secondItem="TwI-LH-Q4U" secondAttribute="bottom" constant="8" id="FNz-iX-oz3"/>
+                <constraint firstAttribute="trailing" secondItem="wLJ-q1-CuJ" secondAttribute="trailing" constant="20" id="FYx-z4-8a6"/>
+                <constraint firstItem="hNA-gA-UzT" firstAttribute="top" secondItem="LXL-hj-Ua8" secondAttribute="bottom" constant="8" id="Fsq-VT-bpl"/>
+                <constraint firstAttribute="trailing" secondItem="TwI-LH-Q4U" secondAttribute="trailing" constant="20" id="H2W-B1-7iq"/>
+                <constraint firstAttribute="trailing" secondItem="hNA-gA-UzT" secondAttribute="trailing" constant="20" id="KIL-6Z-d76"/>
+                <constraint firstItem="VNr-ol-NDR" firstAttribute="top" secondItem="rHu-UU-cej" secondAttribute="bottom" constant="8" id="LxS-eK-wfg"/>
+                <constraint firstItem="wLJ-q1-CuJ" firstAttribute="top" secondItem="hNA-gA-UzT" secondAttribute="bottom" constant="8" id="UHe-4Q-3EY"/>
+                <constraint firstItem="gwJ-ld-GqX" firstAttribute="top" secondItem="wLJ-q1-CuJ" secondAttribute="bottom" constant="8" id="WhN-cR-8eq"/>
+                <constraint firstAttribute="trailing" secondItem="LXL-hj-Ua8" secondAttribute="trailing" constant="20" id="XH1-16-dwb"/>
+                <constraint firstAttribute="trailing" secondItem="VNr-ol-NDR" secondAttribute="trailing" id="YWQ-8k-MJt"/>
+                <constraint firstItem="TwI-LH-Q4U" firstAttribute="top" secondItem="2" secondAttribute="top" constant="80" id="dXp-vl-orD"/>
+                <constraint firstItem="wLJ-q1-CuJ" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="gIl-oS-dKq"/>
+                <constraint firstAttribute="trailing" secondItem="gwJ-ld-GqX" secondAttribute="trailing" constant="20" id="lEF-C3-ohQ"/>
+                <constraint firstItem="hNA-gA-UzT" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="mil-0t-ddV"/>
+                <constraint firstAttribute="bottom" secondItem="VNr-ol-NDR" secondAttribute="bottom" id="qR5-fu-NHx"/>
+                <constraint firstItem="gwJ-ld-GqX" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="qrm-Kv-QPO"/>
+                <constraint firstItem="LXL-hj-Ua8" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="uEy-yP-Bzw"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+        </view>
+        <customObject id="SN5-qn-fdj" customClass="STKPhotosDataSource"/>
+    </objects>
+</document>

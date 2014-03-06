@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C52446D018C779D500962CB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52446CF18C779D500962CB8 /* Foundation.framework */; };
+		C52446D218C779D500962CB8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52446D118C779D500962CB8 /* CoreGraphics.framework */; };
+		C52446D418C779D500962CB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52446D318C779D500962CB8 /* UIKit.framework */; };
+		C52446DA18C779D500962CB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C52446D818C779D500962CB8 /* InfoPlist.strings */; };
+		C52446DC18C779D500962CB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C52446DB18C779D500962CB8 /* main.m */; };
+		C52446E018C779D500962CB8 /* STKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C52446DF18C779D500962CB8 /* STKAppDelegate.m */; };
+		C52446EF18C779D500962CB8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52446EE18C779D500962CB8 /* XCTest.framework */; };
+		C52446F018C779D500962CB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52446CF18C779D500962CB8 /* Foundation.framework */; };
+		C52446F118C779D500962CB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52446D318C779D500962CB8 /* UIKit.framework */; };
+		C52446F918C779D500962CB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C52446F718C779D500962CB8 /* InfoPlist.strings */; };
+		C52446FB18C779D500962CB8 /* ParsePlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C52446FA18C779D500962CB8 /* ParsePlaygroundTests.m */; };
+		C549846118C780EF00149518 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C549846018C780EF00149518 /* Parse.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		C549846518C7813F00149518 /* STKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C549846318C7813F00149518 /* STKMainViewController.m */; };
+		C549846618C7813F00149518 /* STKMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C549846418C7813F00149518 /* STKMainViewController.xib */; };
+		C549846F18C784B200149518 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C549846E18C784B200149518 /* FacebookSDK.framework */; };
+		C549847218C784EB00149518 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C549847018C784EB00149518 /* Security.framework */; };
+		C549847318C784EB00149518 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C549847118C784EB00149518 /* SystemConfiguration.framework */; };
+		C549847518C7850300149518 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C549847418C7850300149518 /* CFNetwork.framework */; };
+		C549847718C7850E00149518 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C549847618C7850E00149518 /* CoreLocation.framework */; };
+		C549847918C7851B00149518 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C549847818C7851B00149518 /* libz.1.1.3.dylib */; };
+		C549847B18C7852700149518 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C549847A18C7852700149518 /* MobileCoreServices.framework */; };
+		C549847D18C7852F00149518 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C549847C18C7852F00149518 /* QuartzCore.framework */; };
+		C549848118C78C0800149518 /* STKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C549847F18C78C0800149518 /* STKLoginViewController.m */; };
+		C549848218C78C0800149518 /* STKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C549848018C78C0800149518 /* STKLoginViewController.xib */; };
+		C549848618C78C1B00149518 /* STKSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C549848418C78C1B00149518 /* STKSignUpViewController.m */; };
+		C549848718C78C1B00149518 /* STKSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C549848518C78C1B00149518 /* STKSignUpViewController.xib */; };
+		C549848B18C78C3500149518 /* STKFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C549848918C78C3500149518 /* STKFormViewController.m */; };
+		C549848C18C78C3500149518 /* STKFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C549848A18C78C3500149518 /* STKFormViewController.xib */; };
+		C549849018C7912400149518 /* STKAllUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C549848E18C7912400149518 /* STKAllUsersViewController.m */; };
+		C549849118C7912400149518 /* STKAllUsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C549848F18C7912400149518 /* STKAllUsersViewController.xib */; };
+		C549849318C7987F00149518 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C549849218C7987F00149518 /* AudioToolbox.framework */; };
+		C549849518C7989300149518 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C549849418C7989300149518 /* StoreKit.framework */; };
+		C549849D18C7C60E00149518 /* STKPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C549849C18C7C60E00149518 /* STKPhotoCell.m */; };
+		C549849F18C7C61900149518 /* STKPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C549849E18C7C61900149518 /* STKPhotoCell.xib */; };
+		C54984A318C7D3EF00149518 /* STKAllPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54984A118C7D3EF00149518 /* STKAllPhotosViewController.m */; };
+		C54984A418C7D3EF00149518 /* STKAllPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C54984A218C7D3EF00149518 /* STKAllPhotosViewController.xib */; };
+		C54984A718C7D4AE00149518 /* STKPhotosDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C54984A618C7D4AE00149518 /* STKPhotosDataSource.m */; };
+		D5EB9903709B4099B93267E8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DA302E233443C8AEECA0E9 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C52446F218C779D500962CB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C52446C418C779D500962CB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C52446CB18C779D500962CB8;
+			remoteInfo = ParsePlayground;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44DB9F8514784973A7505BD2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		93DA302E233443C8AEECA0E9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52446CC18C779D500962CB8 /* ParsePlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParsePlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52446CF18C779D500962CB8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C52446D118C779D500962CB8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C52446D318C779D500962CB8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C52446D718C779D500962CB8 /* ParsePlayground-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParsePlayground-Info.plist"; sourceTree = "<group>"; };
+		C52446D918C779D500962CB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C52446DB18C779D500962CB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C52446DD18C779D500962CB8 /* ParsePlayground-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParsePlayground-Prefix.pch"; sourceTree = "<group>"; };
+		C52446DE18C779D500962CB8 /* STKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STKAppDelegate.h; sourceTree = "<group>"; };
+		C52446DF18C779D500962CB8 /* STKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STKAppDelegate.m; sourceTree = "<group>"; };
+		C52446ED18C779D500962CB8 /* ParsePlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParsePlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52446EE18C779D500962CB8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C52446F618C779D500962CB8 /* ParsePlaygroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParsePlaygroundTests-Info.plist"; sourceTree = "<group>"; };
+		C52446F818C779D500962CB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C52446FA18C779D500962CB8 /* ParsePlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParsePlaygroundTests.m; sourceTree = "<group>"; };
+		C549846018C780EF00149518 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		C549846218C7813F00149518 /* STKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKMainViewController.h; sourceTree = "<group>"; };
+		C549846318C7813F00149518 /* STKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKMainViewController.m; sourceTree = "<group>"; };
+		C549846418C7813F00149518 /* STKMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STKMainViewController.xib; sourceTree = "<group>"; };
+		C549846718C7828500149518 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		C549846A18C7830F00149518 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		C549846E18C784B200149518 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		C549847018C784EB00149518 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C549847118C784EB00149518 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C549847418C7850300149518 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C549847618C7850E00149518 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C549847818C7851B00149518 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		C549847A18C7852700149518 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C549847C18C7852F00149518 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C549847E18C78C0800149518 /* STKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKLoginViewController.h; sourceTree = "<group>"; };
+		C549847F18C78C0800149518 /* STKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKLoginViewController.m; sourceTree = "<group>"; };
+		C549848018C78C0800149518 /* STKLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STKLoginViewController.xib; sourceTree = "<group>"; };
+		C549848318C78C1B00149518 /* STKSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKSignUpViewController.h; sourceTree = "<group>"; };
+		C549848418C78C1B00149518 /* STKSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKSignUpViewController.m; sourceTree = "<group>"; };
+		C549848518C78C1B00149518 /* STKSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STKSignUpViewController.xib; sourceTree = "<group>"; };
+		C549848818C78C3500149518 /* STKFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKFormViewController.h; sourceTree = "<group>"; };
+		C549848918C78C3500149518 /* STKFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKFormViewController.m; sourceTree = "<group>"; };
+		C549848A18C78C3500149518 /* STKFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STKFormViewController.xib; sourceTree = "<group>"; };
+		C549848D18C7912400149518 /* STKAllUsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKAllUsersViewController.h; sourceTree = "<group>"; };
+		C549848E18C7912400149518 /* STKAllUsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKAllUsersViewController.m; sourceTree = "<group>"; };
+		C549848F18C7912400149518 /* STKAllUsersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STKAllUsersViewController.xib; sourceTree = "<group>"; };
+		C549849218C7987F00149518 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C549849418C7989300149518 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C549849B18C7C60E00149518 /* STKPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKPhotoCell.h; sourceTree = "<group>"; };
+		C549849C18C7C60E00149518 /* STKPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKPhotoCell.m; sourceTree = "<group>"; };
+		C549849E18C7C61900149518 /* STKPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STKPhotoCell.xib; sourceTree = "<group>"; };
+		C54984A018C7D3EF00149518 /* STKAllPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKAllPhotosViewController.h; sourceTree = "<group>"; };
+		C54984A118C7D3EF00149518 /* STKAllPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKAllPhotosViewController.m; sourceTree = "<group>"; };
+		C54984A218C7D3EF00149518 /* STKAllPhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STKAllPhotosViewController.xib; sourceTree = "<group>"; };
+		C54984A518C7D4AE00149518 /* STKPhotosDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKPhotosDataSource.h; sourceTree = "<group>"; };
+		C54984A618C7D4AE00149518 /* STKPhotosDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKPhotosDataSource.m; sourceTree = "<group>"; };
+		C56DD6B018C8E5BC00081CD5 /* STKApiConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STKApiConstants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C52446C918C779D500962CB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C549849518C7989300149518 /* StoreKit.framework in Frameworks */,
+				C549849318C7987F00149518 /* AudioToolbox.framework in Frameworks */,
+				C549847D18C7852F00149518 /* QuartzCore.framework in Frameworks */,
+				C549847B18C7852700149518 /* MobileCoreServices.framework in Frameworks */,
+				C549847918C7851B00149518 /* libz.1.1.3.dylib in Frameworks */,
+				C549847718C7850E00149518 /* CoreLocation.framework in Frameworks */,
+				C549847518C7850300149518 /* CFNetwork.framework in Frameworks */,
+				C549847218C784EB00149518 /* Security.framework in Frameworks */,
+				C549847318C784EB00149518 /* SystemConfiguration.framework in Frameworks */,
+				C52446D218C779D500962CB8 /* CoreGraphics.framework in Frameworks */,
+				C52446D418C779D500962CB8 /* UIKit.framework in Frameworks */,
+				C52446D018C779D500962CB8 /* Foundation.framework in Frameworks */,
+				D5EB9903709B4099B93267E8 /* libPods.a in Frameworks */,
+				C549846118C780EF00149518 /* Parse.framework in Frameworks */,
+				C549846F18C784B200149518 /* FacebookSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C52446EA18C779D500962CB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C52446EF18C779D500962CB8 /* XCTest.framework in Frameworks */,
+				C52446F118C779D500962CB8 /* UIKit.framework in Frameworks */,
+				C52446F018C779D500962CB8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C52446C318C779D500962CB8 = {
+			isa = PBXGroup;
+			children = (
+				C52446D518C779D500962CB8 /* ParsePlayground */,
+				C52446F418C779D500962CB8 /* ParsePlaygroundTests */,
+				C52446CE18C779D500962CB8 /* Frameworks */,
+				C52446CD18C779D500962CB8 /* Products */,
+				44DB9F8514784973A7505BD2 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		C52446CD18C779D500962CB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C52446CC18C779D500962CB8 /* ParsePlayground.app */,
+				C52446ED18C779D500962CB8 /* ParsePlaygroundTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C52446CE18C779D500962CB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C549849418C7989300149518 /* StoreKit.framework */,
+				C549849218C7987F00149518 /* AudioToolbox.framework */,
+				C549847C18C7852F00149518 /* QuartzCore.framework */,
+				C549847A18C7852700149518 /* MobileCoreServices.framework */,
+				C549847818C7851B00149518 /* libz.1.1.3.dylib */,
+				C549847618C7850E00149518 /* CoreLocation.framework */,
+				C549847418C7850300149518 /* CFNetwork.framework */,
+				C549847018C784EB00149518 /* Security.framework */,
+				C549847118C784EB00149518 /* SystemConfiguration.framework */,
+				C549846A18C7830F00149518 /* Accounts.framework */,
+				C549846718C7828500149518 /* Social.framework */,
+				C52446CF18C779D500962CB8 /* Foundation.framework */,
+				C52446D118C779D500962CB8 /* CoreGraphics.framework */,
+				C52446D318C779D500962CB8 /* UIKit.framework */,
+				C52446EE18C779D500962CB8 /* XCTest.framework */,
+				93DA302E233443C8AEECA0E9 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C52446D518C779D500962CB8 /* ParsePlayground */ = {
+			isa = PBXGroup;
+			children = (
+				C549845F18C780EF00149518 /* External */,
+				C52446DE18C779D500962CB8 /* STKAppDelegate.h */,
+				C52446DF18C779D500962CB8 /* STKAppDelegate.m */,
+				C56DD6AF18C8E58B00081CD5 /* Other */,
+				C56DD6AE18C8E57900081CD5 /* ViewControllers */,
+				C52446D618C779D500962CB8 /* Supporting Files */,
+			);
+			path = ParsePlayground;
+			sourceTree = "<group>";
+		};
+		C52446D618C779D500962CB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C52446D718C779D500962CB8 /* ParsePlayground-Info.plist */,
+				C52446D818C779D500962CB8 /* InfoPlist.strings */,
+				C52446DB18C779D500962CB8 /* main.m */,
+				C52446DD18C779D500962CB8 /* ParsePlayground-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C52446F418C779D500962CB8 /* ParsePlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				C52446FA18C779D500962CB8 /* ParsePlaygroundTests.m */,
+				C52446F518C779D500962CB8 /* Supporting Files */,
+			);
+			path = ParsePlaygroundTests;
+			sourceTree = "<group>";
+		};
+		C52446F518C779D500962CB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C52446F618C779D500962CB8 /* ParsePlaygroundTests-Info.plist */,
+				C52446F718C779D500962CB8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C549845F18C780EF00149518 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				C549846E18C784B200149518 /* FacebookSDK.framework */,
+				C549846018C780EF00149518 /* Parse.framework */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		C56DD6AE18C8E57900081CD5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C549846218C7813F00149518 /* STKMainViewController.h */,
+				C549846318C7813F00149518 /* STKMainViewController.m */,
+				C549846418C7813F00149518 /* STKMainViewController.xib */,
+				C549847E18C78C0800149518 /* STKLoginViewController.h */,
+				C549847F18C78C0800149518 /* STKLoginViewController.m */,
+				C549848018C78C0800149518 /* STKLoginViewController.xib */,
+				C549848318C78C1B00149518 /* STKSignUpViewController.h */,
+				C549848418C78C1B00149518 /* STKSignUpViewController.m */,
+				C549848518C78C1B00149518 /* STKSignUpViewController.xib */,
+				C549848818C78C3500149518 /* STKFormViewController.h */,
+				C549848918C78C3500149518 /* STKFormViewController.m */,
+				C549848A18C78C3500149518 /* STKFormViewController.xib */,
+				C549848D18C7912400149518 /* STKAllUsersViewController.h */,
+				C549848E18C7912400149518 /* STKAllUsersViewController.m */,
+				C549848F18C7912400149518 /* STKAllUsersViewController.xib */,
+				C54984A018C7D3EF00149518 /* STKAllPhotosViewController.h */,
+				C54984A118C7D3EF00149518 /* STKAllPhotosViewController.m */,
+				C54984A218C7D3EF00149518 /* STKAllPhotosViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C56DD6AF18C8E58B00081CD5 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C56DD6B018C8E5BC00081CD5 /* STKApiConstants.h */,
+				C54984A518C7D4AE00149518 /* STKPhotosDataSource.h */,
+				C54984A618C7D4AE00149518 /* STKPhotosDataSource.m */,
+				C549849B18C7C60E00149518 /* STKPhotoCell.h */,
+				C549849C18C7C60E00149518 /* STKPhotoCell.m */,
+				C549849E18C7C61900149518 /* STKPhotoCell.xib */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C52446CB18C779D500962CB8 /* ParsePlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C52446FE18C779D500962CB8 /* Build configuration list for PBXNativeTarget "ParsePlayground" */;
+			buildPhases = (
+				703401FAA04F4E4293FCF7FF /* Check Pods Manifest.lock */,
+				C52446C818C779D500962CB8 /* Sources */,
+				C52446C918C779D500962CB8 /* Frameworks */,
+				C52446CA18C779D500962CB8 /* Resources */,
+				D23B01D56A4948788D57A102 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParsePlayground;
+			productName = ParsePlayground;
+			productReference = C52446CC18C779D500962CB8 /* ParsePlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C52446EC18C779D500962CB8 /* ParsePlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C524470118C779D500962CB8 /* Build configuration list for PBXNativeTarget "ParsePlaygroundTests" */;
+			buildPhases = (
+				C52446E918C779D500962CB8 /* Sources */,
+				C52446EA18C779D500962CB8 /* Frameworks */,
+				C52446EB18C779D500962CB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C52446F318C779D500962CB8 /* PBXTargetDependency */,
+			);
+			name = ParsePlaygroundTests;
+			productName = ParsePlaygroundTests;
+			productReference = C52446ED18C779D500962CB8 /* ParsePlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C52446C418C779D500962CB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = STK;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Sean Kladek";
+				TargetAttributes = {
+					C52446EC18C779D500962CB8 = {
+						TestTargetID = C52446CB18C779D500962CB8;
+					};
+				};
+			};
+			buildConfigurationList = C52446C718C779D500962CB8 /* Build configuration list for PBXProject "ParsePlayground" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C52446C318C779D500962CB8;
+			productRefGroup = C52446CD18C779D500962CB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C52446CB18C779D500962CB8 /* ParsePlayground */,
+				C52446EC18C779D500962CB8 /* ParsePlaygroundTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C52446CA18C779D500962CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C549846618C7813F00149518 /* STKMainViewController.xib in Resources */,
+				C54984A418C7D3EF00149518 /* STKAllPhotosViewController.xib in Resources */,
+				C549848218C78C0800149518 /* STKLoginViewController.xib in Resources */,
+				C549848718C78C1B00149518 /* STKSignUpViewController.xib in Resources */,
+				C549848C18C78C3500149518 /* STKFormViewController.xib in Resources */,
+				C549849F18C7C61900149518 /* STKPhotoCell.xib in Resources */,
+				C549849118C7912400149518 /* STKAllUsersViewController.xib in Resources */,
+				C52446DA18C779D500962CB8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C52446EB18C779D500962CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C52446F918C779D500962CB8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		703401FAA04F4E4293FCF7FF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D23B01D56A4948788D57A102 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C52446C818C779D500962CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C52446DC18C779D500962CB8 /* main.m in Sources */,
+				C549848118C78C0800149518 /* STKLoginViewController.m in Sources */,
+				C54984A718C7D4AE00149518 /* STKPhotosDataSource.m in Sources */,
+				C549846518C7813F00149518 /* STKMainViewController.m in Sources */,
+				C52446E018C779D500962CB8 /* STKAppDelegate.m in Sources */,
+				C549848618C78C1B00149518 /* STKSignUpViewController.m in Sources */,
+				C549849D18C7C60E00149518 /* STKPhotoCell.m in Sources */,
+				C54984A318C7D3EF00149518 /* STKAllPhotosViewController.m in Sources */,
+				C549848B18C78C3500149518 /* STKFormViewController.m in Sources */,
+				C549849018C7912400149518 /* STKAllUsersViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C52446E918C779D500962CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C52446FB18C779D500962CB8 /* ParsePlaygroundTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C52446F318C779D500962CB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C52446CB18C779D500962CB8 /* ParsePlayground */;
+			targetProxy = C52446F218C779D500962CB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C52446D818C779D500962CB8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C52446D918C779D500962CB8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C52446F718C779D500962CB8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C52446F818C779D500962CB8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C52446FC18C779D500962CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C52446FD18C779D500962CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C52446FF18C779D500962CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44DB9F8514784973A7505BD2 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/skladek/nrdDev/Parse/ParsePlayground/External,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParsePlayground/ParsePlayground-Prefix.pch";
+				INFOPLIST_FILE = "ParsePlayground/ParsePlayground-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C524470018C779D500962CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44DB9F8514784973A7505BD2 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/skladek/nrdDev/Parse/ParsePlayground/External,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParsePlayground/ParsePlayground-Prefix.pch";
+				INFOPLIST_FILE = "ParsePlayground/ParsePlayground-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C524470218C779D500962CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParsePlayground.app/ParsePlayground";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParsePlayground/ParsePlayground-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ParsePlaygroundTests/ParsePlaygroundTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C524470318C779D500962CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParsePlayground.app/ParsePlayground";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParsePlayground/ParsePlayground-Prefix.pch";
+				INFOPLIST_FILE = "ParsePlaygroundTests/ParsePlaygroundTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C52446C718C779D500962CB8 /* Build configuration list for PBXProject "ParsePlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C52446FC18C779D500962CB8 /* Debug */,
+				C52446FD18C779D500962CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C52446FE18C779D500962CB8 /* Build configuration list for PBXNativeTarget "ParsePlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C52446FF18C779D500962CB8 /* Debug */,
+				C524470018C779D500962CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C524470118C779D500962CB8 /* Build configuration list for PBXNativeTarget "ParsePlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C524470218C779D500962CB8 /* Debug */,
+				C524470318C779D500962CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C52446C418C779D500962CB8 /* Project object */;
+}
