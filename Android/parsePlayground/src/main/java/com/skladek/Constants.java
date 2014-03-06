@@ -7,6 +7,8 @@ package com.skladek;
  */
 public final class Constants {
 
+    public static final String kLogInKey = "logIn";
+
     /**
      * Suppress default constructor for noninstantiability
      */

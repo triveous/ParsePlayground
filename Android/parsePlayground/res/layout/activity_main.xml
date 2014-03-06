@@ -6,52 +6,28 @@
     tools:context=".MainActivity"
     android:background="#000">
 
-    <Button style="@style/button"
+    <Button style="@style/fields"
         android:id="@+id/currentUserButton"
-        android:layout_height="50dp"
-        android:layout_width="match_parent"
         android:text="Current User"
         />
 
-    <Button style="@style/button"
-        android:id="@+id/usernameLogInButton"
-        android:layout_height="50dp"
-        android:layout_width="match_parent"
-        android:text="Log In Via Username"
+    <Button style="@style/fields"
+        android:id="@+id/logInButton"
+        android:text="Log In"
         />
 
-    <Button style="@style/button"
-        android:id="@+id/facebookLogInButton"
-        android:layout_height="50dp"
-        android:layout_width="match_parent"
-        android:text="Sign Up/Log In Via Facebook"
-        />
-
-    <Button style="@style/button"
-        android:id="@+id/twitterLogInButton"
-        android:layout_height="50dp"
-        android:layout_width="match_parent"
-        android:text="Sign Up/Log In Via Twitter"
-        />
-
-    <Button style="@style/button"
+    <Button style="@style/fields"
         android:id="@+id/signUpButton"
-        android:layout_height="50dp"
-        android:layout_width="match_parent"
         android:text="Sign Up"
         />
 
-    <Button style="@style/button"
+    <Button style="@style/fields"
         android:id="@+id/allUsersButton"
-        android:layout_height="50dp"
-        android:layout_width="match_parent"
         android:text="All Users"
         />
 
-    <Button style="@style/button"
+    <Button style="@style/fields"
         android:id="@+id/allPhotosButton"
-        android:layout_height="50dp"
-        android:layout_width="match_parent"
         android:text="All Photos"
         />
 

@@ -23,6 +23,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.LogInSignUpActivity"
+            android:label="Sign Up"
+            android:parentActivityName=".activity.MainActivity"
+            />
     </application>
 
 </manifest>
