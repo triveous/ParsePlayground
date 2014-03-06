@@ -1,9 +1,13 @@
 package com.skladek;
 
 import com.parse.Parse;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.SaveCallback;
 import com.skladek.dependencyinjection.modules.AndroidModule;
 
 import android.app.Application;
+import android.util.Log;
 
 import java.util.Arrays;
 import java.util.List;

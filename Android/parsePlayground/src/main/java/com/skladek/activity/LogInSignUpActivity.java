@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.parse.LogInCallback;
+import com.parse.ParseException;
+import com.parse.ParseUser;
 import com.skladek.Constants;
 import com.skladek.R;
 
@@ -30,6 +33,9 @@ public class LogInSignUpActivity extends BaseActivity {
     @InjectView(R.id.emailField)
     EditText emailField;
 
+    @InjectView(R.id.submitButton)
+    Button submitButton;
+
     @InjectView(R.id.facebookButton)
     Button facebookButton;
 
@@ -48,6 +54,9 @@ public class LogInSignUpActivity extends BaseActivity {
 
         if (this.logIn) {
             this.emailField.setVisibility(View.GONE);
+            this.submitButton.setOnClickListener(this.logInListener());
+        } else {
+            this.submitButton.setOnClickListener(this.signUpListener());
         }
     }
 
@@ -57,4 +66,39 @@ public class LogInSignUpActivity extends BaseActivity {
         return true;
     }
 
+    private View.OnClickListener logInListener() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                logIn();
+            }
+        };
+    }
+
+    private View.OnClickListener signUpListener() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                signUp();
+            }
+        };
+    }
+
+    private void logIn() {
+        Log.d("Boom", "erang");
+        ParseUser.logInInBackground(this.usernameField.getText().toString(), this.passwordField.getText().toString(), new LogInCallback() {
+            @Override
+            public void done(ParseUser parseUser, ParseException e) {
+                if (parseUser != null) {
+                    Log.d("BOOM", "Logged in as:" + parseUser.getUsername());
+                } else {
+                    Log.d("Exception", e.toString());
+                }
+            }
+        });
+    }
+
+    private void signUp() {
+
+    }
 }
