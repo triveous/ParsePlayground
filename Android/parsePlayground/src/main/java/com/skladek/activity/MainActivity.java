@@ -25,6 +25,9 @@ public class MainActivity extends BaseActivity {
     @InjectView(R.id.logInButton)
     Button logInButton;
 
+    @InjectView(R.id.allUsersButton)
+    Button allUsersButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +37,7 @@ public class MainActivity extends BaseActivity {
 
         this.signUpButton.setOnClickListener(this.signUpListener());
         this.logInButton.setOnClickListener(this.logInListener());
+        this.allUsersButton.setOnClickListener(this.allUsersListener());
     }
 
     @Override
@@ -61,9 +65,23 @@ public class MainActivity extends BaseActivity {
         };
     }
 
+    private View.OnClickListener allUsersListener() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                displayAllUsers();
+            }
+        };
+    }
+
     private void logInSignUp (boolean logIn) {
         Intent intent = new Intent(this, LogInSignUpActivity.class);
         intent.putExtra(Constants.kLogInKey, logIn);
+        startActivity(intent);
+    }
+
+    private void displayAllUsers() {
+        Intent intent = new Intent(this, AllUsersActivity.class);
         startActivity(intent);
     }
 }

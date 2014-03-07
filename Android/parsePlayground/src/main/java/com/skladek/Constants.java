@@ -8,6 +8,7 @@ package com.skladek;
 public final class Constants {
 
     public static final String kLogInKey = "logIn";
+    public static final String kUsernameKey = "username";
     public static final String kFirstNameKey = "firstname";
     public static final String kLastNameKey = "lastname";
 

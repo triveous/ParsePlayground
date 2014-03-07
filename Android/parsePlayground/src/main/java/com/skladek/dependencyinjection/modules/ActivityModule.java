@@ -4,6 +4,7 @@ package com.skladek.dependencyinjection.modules;
  * @author areitz
  */
 
+import com.skladek.activity.AllUsersActivity;
 import com.skladek.activity.LogInSignUpActivity;
 import com.skladek.activity.UserFormActivity;
 import com.skladek.dependencyinjection.annotations.ForActivity;
@@ -25,6 +26,7 @@ import dagger.Provides;
 @Module(
         injects = {
                 MainActivity.class,
+                AllUsersActivity.class,
                 LogInSignUpActivity.class,
                 UserFormActivity.class
         },

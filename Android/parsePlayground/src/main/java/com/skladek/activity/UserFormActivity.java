@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.EditText;
 
+import com.parse.Parse;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.skladek.Constants;
 import com.skladek.R;

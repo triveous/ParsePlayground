@@ -27,6 +27,11 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".activity.AllUsersActivity"
+            android:label="All Users"
+            android:parentActivityName=".activity.MainActivity"
+            />
+        <activity
             android:name=".activity.LogInSignUpActivity"
             android:label="Sign Up"
             android:parentActivityName=".activity.MainActivity"
