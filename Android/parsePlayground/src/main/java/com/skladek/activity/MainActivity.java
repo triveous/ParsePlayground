@@ -19,6 +19,9 @@ import butterknife.InjectView;
  */
 public class MainActivity extends BaseActivity {
 
+    @InjectView(R.id.currentUserButton)
+    Button currentUserButton;
+
     @InjectView(R.id.signUpButton)
     Button signUpButton;
 
@@ -35,6 +38,7 @@ public class MainActivity extends BaseActivity {
 
         ButterKnife.inject(this);
 
+        this.currentUserButton.setOnClickListener(this.currentUserListener());
         this.signUpButton.setOnClickListener(this.signUpListener());
         this.logInButton.setOnClickListener(this.logInListener());
         this.allUsersButton.setOnClickListener(this.allUsersListener());
@@ -45,6 +49,15 @@ public class MainActivity extends BaseActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.activity_main, menu);
         return true;
+    }
+
+    private View.OnClickListener currentUserListener() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                displayCurrentUser();
+            }
+        };
     }
 
     private View.OnClickListener signUpListener() {
@@ -72,6 +85,11 @@ public class MainActivity extends BaseActivity {
                 displayAllUsers();
             }
         };
+    }
+
+    private void displayCurrentUser() {
+        Intent intent = new Intent(this, UserFormActivity.class);
+        startActivity(intent);
     }
 
     private void logInSignUp (boolean logIn) {

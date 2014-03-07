@@ -45,16 +45,21 @@ public class UserFormActivity extends BaseActivity {
         ButterKnife.inject(this);
 
         Intent intent = getIntent();
-        if (intent == null) {
-            return;
-        }
-        String username = intent.getExtras().getString(Constants.kUsernameKey);
 
-        Log.d("BOOM", username);
+        String username = null;
+        if (intent.hasExtra(Constants.kUsernameKey)) {
+            username = intent.getExtras().getString(Constants.kUsernameKey);
+        }
+
         queryFromUsername(username);
     }
 
     private void queryFromUsername(String username) {
+        if (username == null) {
+            populateFromUser(null);
+            return;
+        }
+
         ParseQuery<ParseUser> query = ParseUser.getQuery();
         query.whereEqualTo(Constants.kUsernameKey, username);
         query.getFirstInBackground(new GetCallback<ParseUser>() {

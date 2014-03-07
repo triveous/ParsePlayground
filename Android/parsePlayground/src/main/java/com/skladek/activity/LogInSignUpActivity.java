@@ -12,6 +12,7 @@ import com.parse.LogInCallback;
 import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseUser;
+import com.parse.SignUpCallback;
 import com.skladek.Constants;
 import com.skladek.R;
 
@@ -99,7 +100,25 @@ public class LogInSignUpActivity extends BaseActivity {
     }
 
     private void signUp() {
+        ParseUser user = new ParseUser();
+        user.setUsername(this.usernameField.getText().toString());
+        user.setPassword(this.passwordField.getText().toString());
 
+        String email = this.emailField.getText().toString();
+        if (email.length() > 0) {
+            user.setEmail(email);
+        }
+
+        user.signUpInBackground(new SignUpCallback() {
+            @Override
+            public void done(ParseException e) {
+                if (e == null) {
+                    pushUserForm();
+                } else {
+                    Log.d("Error", e.getLocalizedMessage());
+                }
+            }
+        });
     }
 
     private void pushUserForm() {
