@@ -5,6 +5,7 @@ package com.skladek.dependencyinjection.modules;
  */
 
 import com.skladek.activity.LogInSignUpActivity;
+import com.skladek.activity.UserFormActivity;
 import com.skladek.dependencyinjection.annotations.ForActivity;
 import com.skladek.activity.BaseActivity;
 import com.skladek.activity.MainActivity;
@@ -24,7 +25,8 @@ import dagger.Provides;
 @Module(
         injects = {
                 MainActivity.class,
-                LogInSignUpActivity.class
+                LogInSignUpActivity.class,
+                UserFormActivity.class
         },
         addsTo = AndroidModule.class,
         library = true

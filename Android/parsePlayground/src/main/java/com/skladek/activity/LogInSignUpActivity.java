@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.parse.LogInCallback;
+import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.skladek.Constants;
@@ -85,12 +86,11 @@ public class LogInSignUpActivity extends BaseActivity {
     }
 
     private void logIn() {
-        Log.d("Boom", "erang");
         ParseUser.logInInBackground(this.usernameField.getText().toString(), this.passwordField.getText().toString(), new LogInCallback() {
             @Override
             public void done(ParseUser parseUser, ParseException e) {
                 if (parseUser != null) {
-                    Log.d("BOOM", "Logged in as:" + parseUser.getUsername());
+                    pushUserForm();
                 } else {
                     Log.d("Exception", e.toString());
                 }
@@ -100,5 +100,10 @@ public class LogInSignUpActivity extends BaseActivity {
 
     private void signUp() {
 
+    }
+
+    private void pushUserForm() {
+        Intent intent = new Intent(this, UserFormActivity.class);
+        startActivity(intent);
     }
 }
