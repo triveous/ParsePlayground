@@ -28,9 +28,6 @@ import butterknife.InjectView;
  * Created by skladek on 3/6/14.
  */
 public class AllUsersActivity extends BaseActivity {
-
-    List<ParseUser> userList;
-
     @InjectView(R.id.allUsersList)
     ListView allUsersList;
 
@@ -67,7 +64,10 @@ public class AllUsersActivity extends BaseActivity {
     }
 
     private void displayUserForm(int position) {
+        UsersArrayAdapter adapter = (UsersArrayAdapter)this.allUsersList.getAdapter();
+        ParseUser user = adapter.getItem(position);
         Intent intent = new Intent(this, UserFormActivity.class);
+        intent.putExtra(Constants.kUsernameKey, user.getUsername());
         startActivity(intent);
     }
 
