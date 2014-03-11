@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="STKMainViewController">
@@ -44,6 +44,20 @@
                     </state>
                     <connections>
                         <action selector="currentUserTapped:" destination="-1" eventType="touchUpInside" id="7YZ-wC-qny"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ed-B8-ftq">
+                    <rect key="frame" x="20" y="437" width="728" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.98431372549999996" green="0.98823529409999999" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="lJA-h3-VA0"/>
+                    </constraints>
+                    <state key="normal" title="New Anon User">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="anonUser:" destination="-1" eventType="touchUpInside" id="jcb-xG-pgR"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbL-WL-66M">
@@ -122,6 +136,7 @@
                 <constraint firstItem="sce-tB-h8G" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="2jE-mf-7L5"/>
                 <constraint firstItem="crL-la-bRW" firstAttribute="top" secondItem="ZUY-im-icH" secondAttribute="bottom" constant="8" id="5sl-iS-wLP"/>
                 <constraint firstAttribute="trailing" secondItem="ZUY-im-icH" secondAttribute="trailing" constant="20" id="8Cc-ry-lJU"/>
+                <constraint firstItem="9ed-B8-ftq" firstAttribute="top" secondItem="7dg-ah-HAi" secondAttribute="bottom" constant="8" id="CEZ-lC-SlV"/>
                 <constraint firstItem="fbL-WL-66M" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="G9r-tU-gYT"/>
                 <constraint firstAttribute="trailing" secondItem="7dg-ah-HAi" secondAttribute="trailing" constant="20" id="Ih7-CM-1jM"/>
                 <constraint firstItem="zs6-Uf-Fph" firstAttribute="top" secondItem="2" secondAttribute="top" constant="73" id="OCv-TQ-Y27"/>
@@ -129,11 +144,13 @@
                 <constraint firstAttribute="trailing" secondItem="zs6-Uf-Fph" secondAttribute="trailing" constant="20" id="ToU-yB-K80"/>
                 <constraint firstItem="sce-tB-h8G" firstAttribute="top" secondItem="zs6-Uf-Fph" secondAttribute="bottom" constant="8" id="UEZ-A4-T3n"/>
                 <constraint firstItem="crL-la-bRW" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="Ya7-Bw-ezo"/>
+                <constraint firstItem="9ed-B8-ftq" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="ZMA-m1-jbt"/>
                 <constraint firstAttribute="trailing" secondItem="URg-kI-1Wh" secondAttribute="trailing" constant="20" id="Zxy-nN-eTk"/>
                 <constraint firstAttribute="trailing" secondItem="crL-la-bRW" secondAttribute="trailing" constant="20" id="a4F-qa-jCB"/>
                 <constraint firstItem="7dg-ah-HAi" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="afw-Im-4NE"/>
                 <constraint firstItem="zs6-Uf-Fph" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="beN-O9-jAC"/>
                 <constraint firstItem="URg-kI-1Wh" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="chC-8o-vtK"/>
+                <constraint firstAttribute="trailing" secondItem="9ed-B8-ftq" secondAttribute="trailing" constant="20" id="gY9-xo-m1m"/>
                 <constraint firstItem="7dg-ah-HAi" firstAttribute="top" secondItem="URg-kI-1Wh" secondAttribute="bottom" constant="8" id="kBG-wF-Npm"/>
                 <constraint firstItem="URg-kI-1Wh" firstAttribute="top" secondItem="fbL-WL-66M" secondAttribute="bottom" constant="8" id="mvp-xe-U8n"/>
                 <constraint firstItem="ZUY-im-icH" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="pNV-n7-kEu"/>

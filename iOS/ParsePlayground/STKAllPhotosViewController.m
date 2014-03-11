@@ -34,6 +34,8 @@
     [super viewDidLoad];
     
     [self.collectionView registerNib:[UINib nibWithNibName:@"STKPhotoCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:kPhotoCellID];
+    
+    [PFAnalytics trackEvent:@"AllPhotosViewed" dimensions:@{@"User" : [PFUser currentUser].username}];
 }
 
 - (void)viewDidAppear:(BOOL)animated

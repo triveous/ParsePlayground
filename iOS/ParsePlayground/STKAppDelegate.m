@@ -21,6 +21,8 @@
     [PFFacebookUtils initializeFacebook];
     [PFTwitterUtils initializeWithConsumerKey:@"NXxnrH0kjZ5BoZMgl0lbg" consumerSecret:@"dZrcI34kCWvTbRduUPj8JmFqrxRcbztgJO5ApjVAomc"];
     
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     UINavigationController*navigation = [[UINavigationController alloc] initWithRootViewController:[[STKMainViewController alloc] init]];
     
     self.window.rootViewController = navigation;

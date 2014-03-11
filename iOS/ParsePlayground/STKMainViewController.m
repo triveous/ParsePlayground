@@ -102,4 +102,15 @@
     [self.navigationController pushViewController:form animated:YES];
 }
 
+- (IBAction)anonUser:(id)sender
+{
+    [PFAnonymousUtils logInWithBlock:^(PFUser *user, NSError *error) {
+        if (user) {
+            [self pushUserForm];
+        } else {
+            DLog(@"Error: %@", error);
+        }
+    }];
+}
+
 @end
