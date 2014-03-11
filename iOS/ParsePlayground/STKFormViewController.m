@@ -61,6 +61,8 @@
     self.lastName.text = self.user[kUserLastName];
     
     [self loadPhotos];
+    
+    [PFAnalytics trackEvent:kPageViewKey dimensions:@{kUserUsername : [PFUser currentUser].username, kPage : @"User Form"}];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

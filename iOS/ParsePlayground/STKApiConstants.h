@@ -17,3 +17,8 @@ static NSString * const kUserUsername = @"username";
 static NSString * const kPhotoClassName = @"Photo";
 static NSString * const kPhotoFile = @"file";
 static NSString * const kPhotoUser = @"user";
+
+#pragma mark - Tracking Keys
+
+static NSString * const kPageViewKey = @"PageView";
+static NSString * const kPage = @"page";

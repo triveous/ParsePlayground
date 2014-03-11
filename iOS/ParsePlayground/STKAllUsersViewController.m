@@ -51,6 +51,8 @@ static NSString * const kCellID = @"cellID";
             [self.tableView reloadData];
         }
     }];
+    
+    [PFAnalytics trackEvent:kPageViewKey dimensions:@{kUserUsername : [PFUser currentUser].username, kPage : @"All Users"}];
 }
 
 - (void)didReceiveMemoryWarning
