@@ -47,6 +47,7 @@ public class DefaultSharedPreferenceServiceTest {
 
         //Assert
         verify(mEditor, times(1)).putInt(key, value);
+        verify(mEditor, times(1)).commit();
     }
 
     @Test
@@ -74,6 +75,7 @@ public class DefaultSharedPreferenceServiceTest {
 
         //Assert
         verify(mEditor, times(1)).putBoolean(key, value);
+        verify(mEditor, times(1)).commit();
     }
 
     @Test
@@ -100,6 +102,7 @@ public class DefaultSharedPreferenceServiceTest {
 
         //Assert
         verify(mEditor, times(1)).putFloat(key, value);
+        verify(mEditor, times(1)).commit();
     }
 
     @Test
@@ -126,6 +129,7 @@ public class DefaultSharedPreferenceServiceTest {
 
         //Assert
         verify(mEditor, times(1)).putString(key, value);
+        verify(mEditor, times(1)).commit();
     }
 
     @Test
